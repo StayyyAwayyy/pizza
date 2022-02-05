@@ -1,0 +1,500 @@
+@font-face {
+  font-family: 'MullerReg';
+  src: url(../fonts/MullerRegular.ttf);
+}
+@font-face {
+  font-family: 'MullerBlack';
+  src: url(../fonts/MullerBlack.ttf);
+}
+@font-face {
+  font-family: 'MullerExtraBold';
+  src: url(../fonts/MullerExtraBold.ttf);
+}
+@font-face {
+  font-family: 'MullerBold';
+  src: url(../fonts/MullerBold.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: 'MullerReg', sans-serif;
+}
+
+ul,
+li {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+#header {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 3px 13.8px 1.2px rgba(152, 152, 152, 0.2);
+  padding: 15px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  font-size: 24px;
+  font-family: 'MullerBlack', sans-serif;
+  color: rgb(255, 196, 104);
+  text-transform: uppercase;
+  line-height: 1.2;
+  max-width: 84px;
+  margin-left: 8px;
+}
+
+#header-menu {
+  width: 490px;
+  margin: 0 261px 0 248px;
+}
+
+#header-menu ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item a {
+  font-size: 16px;
+  color: rgb(164, 107, 0);
+}
+
+/* MAIN */
+
+#main {
+  padding: 132px 0 160px;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#main-info {
+  max-width: 622px;
+}
+
+.main__title {
+  font-size: 45px;
+  font-family: 'MullerExtraBold', sans-serif;
+  color: #b99150;
+  line-height: 1.222;
+}
+
+#main-info h1 span {
+  color: #ffaf18;
+}
+
+#main-advantages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 13px;
+}
+
+.advantage-item {
+  max-width: 292px;
+  display: flex;
+  align-items: center;
+  margin-top: 47px;
+}
+
+.advantage-text {
+  margin-left: 16px;
+}
+
+.advantage-text .advantage-title {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: 'MullerExtraBold', sans-serif;
+  color: rgb(255, 175, 24);
+}
+
+.advantage-text .advantage-about {
+  font-size: 16px;
+  color: rgb(185, 145, 80);
+  line-height: 1;
+}
+
+.btn {
+  background-color: rgb(255, 175, 24);
+  text-align: center;
+  font-size: 16px;
+  font-family: 'MullerBold', sans-serif;
+  color: rgb(56, 36, 0);
+  padding: 22px;
+  box-sizing: border-box;
+  display: block;
+}
+
+#main-button {
+  margin-top: 60px;
+}
+
+#main-button .btn {
+  width: 224px;
+  display: inline-block;
+}
+
+/* PRODUCTS */
+
+#products h2 {
+  font-size: 35px;
+  font-family: 'MullerBold', sans-serif;
+  color: rgb(189, 152, 92);
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#products-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item-image {
+  display: block;
+}
+
+.product-item {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 3px 13.8px 1.2px rgba(152, 152, 152, 0.2);
+  width: 282px;
+  padding: 27px 20px 15px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.product-item .item-image {
+  height: 155px;
+}
+
+.product-item .item-title {
+  font-size: 18px;
+  font-family: 'MullerBold', sans-serif;
+  color: rgb(56, 36, 0);
+  margin-top: 15px;
+}
+
+.product-item .item-text {
+  font-size: 14px;
+  color: rgb(24, 26, 26);
+  line-height: 1.286;
+  height: 50px;
+  margin: 15px 0;
+}
+
+.product-item .item-button.btn {
+  border: 0;
+  outline: 0;
+  padding: 17px;
+  width: 100%;
+}
+
+.test-popup-link {
+  display: block;
+}
+
+/* ORDER */
+
+#order {
+  overflow: hidden;
+}
+
+.order-container {
+  padding: 216px 0 115px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#order-text {
+  max-width: 384px;
+}
+
+.order-text-title {
+  font-size: 35px;
+  font-family: 'MullerExtraBold', sans-serif;
+  color: #b99150;
+  line-height: 1.286;
+  margin-bottom: 65px;
+}
+
+.order-text-title span {
+  color: #ffaf18;
+}
+
+.order-text-message {
+  font-size: 16px;
+  color: #b99150;
+  line-height: 1.5;
+}
+
+.order-form {
+  max-width: 330px;
+}
+
+.order-form input {
+  border: 1px solid rgb(185, 145, 80);
+  background-color: rgb(255, 255, 255);
+  padding: 23px;
+  font-size: 18px;
+  box-sizing: border-box;
+  width: 328px;
+  outline: 0;
+  margin-bottom: 24px;
+}
+
+.error {
+  height: 24px;
+  line-height: 24px;
+}
+
+::placeholder {
+  color: rgb(203, 168, 110);
+}
+
+.order-form button.btn {
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+}
+
+.order-image {
+  width: 282px;
+  position: relative;
+}
+
+.order-image img {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+}
+
+/* FOOTER */
+
+#footer {
+  padding: 15px 0;
+  box-shadow: 0px 0px 13.8px 1.2px rgba(152, 152, 152, 0.2);
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+}
+
+#rights {
+  font-size: 12px;
+  color: rgb(186, 179, 179);
+  margin-left: 358px;
+}
+
+#burger {
+  display: none;
+}
+
+#header-menu svg {
+  display: none;
+}
+
+/* magnific-popup*/
+
+.white-popup {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+#loader {
+  display: none;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: rgb(255, 175, 24) transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  font-size: 15px;
+  color: red;
+  display: none;
+}
+
+.thanks {
+  display: none;
+  max-width: 330px;
+  font-size: 50px;
+  font-family: 'MullerExtraBold', sans-serif;
+  color: #ffaf18;
+  line-height: 1.286;
+  align-self: center;
+  text-align: center;
+}
+
+#cookie {
+  display: none;
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.11);
+  max-width: 330px;
+}
+
+#cookie-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-family: 'MullerBold', sans-serif;
+}
+
+#cookie-title span {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+#cookie-text {
+  font-size: 16;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+#cookie-btn .btn {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
